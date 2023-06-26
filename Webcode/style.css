@@ -1,0 +1,143 @@
+/** @format */
+body {
+  background-color: rgb(214, 255, 253);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-colorcolor: transparent;
+}
+
+.productType {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 3rem;
+  align-items: center;
+  padding: 0 4.3rem;
+  justify-content: space-around;
+  background-color: rgb(0, 123, 255);
+  position: sticky;
+  top: 0rem;
+  z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.productCount {
+  background-color: rgba(255, 240, 172, 0.555);
+  height: 2rem;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(123, 13, 186);
+}
+
+.output {
+  display: flex;
+  width: 100vw;
+}
+
+.outputLeft {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 60%;
+  background-color: rgb(230, 228, 197);
+}
+
+.outputLeft a {
+  text-decoration: none;
+}
+.outputLeft a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+
+.outputRight {
+  width: 40%;
+  height: 100vh;
+  background-color: rgb(255, 224, 198);
+  position: sticky;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 1rem 3rem;
+  color: rgb(0, 0, 0);
+}
+
+
+.box {
+  display: flex;
+  align-items: space-between;
+  padding-bottom: 1rem;
+  text-align: justify;
+  padding: 1rem 5rem;
+  max-width: 100%;
+  color: #333333;
+  max-height: 30%;
+  border-bottom: 0.51px solid #333333;
+}
+
+.box .boxLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin-right: 3rem;
+}
+
+.describe {
+  display: none;
+}
+
+.box .boxRight {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .boxRight img {
+  width: 200px;
+  height: 200px;
+}
+
+.readDescription {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+  }
+  .output {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .describe {
+    display: block;
+  }
+  .outputLeft {
+    width: 100%;
+  }
+  .outputRight {
+    display: none;
+    width: 0%;
+  }
+}
